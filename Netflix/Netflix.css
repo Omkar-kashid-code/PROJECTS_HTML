@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .container{
-    background: linear-gradient(to right , rgba(0, 0, 0, 0.9) ,  rgba(0, 0, 0, 0.8 )) , url(uwp4594565.webp);
+    background: linear-gradient(to right , rgba(0, 0, 0, 0.7) ,  rgba(0, 0, 0, 0.8 )) , url(uwp4594565.webp);
   background-repeat: no-repeat;
   background-size: cover;
   height: 650px;
@@ -34,12 +34,13 @@ img {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     padding: 5px 10px;
-    background-color: rgb(221, 95, 95);
+    background: rgb(229, 9, 20);
     color: white;
     border: none;
     border-radius: 5px;
-   
+    cursor: pointer;
 }
+
 
 .main {
     display: flex;
@@ -69,6 +70,7 @@ img {
     font-weight: 600;
     font-size: 15px;
     margin-top: 30px;
+    color: white;
 }
 
 .mail {
@@ -90,10 +92,13 @@ input {
     font-size: 18px;
     border-radius: 3px;
     padding: 5px 10px;
-    background-color: rgb(221, 95, 95);
+    background: rgb(229, 9, 20);
     color: white;
     border: none;
+    cursor: pointer;
 }
+
+
 .scroll{
     padding-left: 150px;
     padding-right: 150px;
@@ -113,6 +118,7 @@ input {
     border-radius: 5px;
     margin-top: 20px;
     border-color: white;
+    cursor: pointer;
 }
 .ind {
     margin-right: 10px; 
@@ -125,25 +131,31 @@ input {
     background-color: rgb(7, 7, 7);
     scrollbar-width: none;
     overflow-x: auto;
+   
 }
+.all-movies > div {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.all-movies > div:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); 
+    cursor: pointer; 
+}
+
 .box1{
     border: 2px solid black;
     height: 250px;
     min-width: 180px;
-    border-radius: 7px;
+    border-radius: 10px;
     position: relative;
    background-image: url(j.jpg);
    background-repeat: no-repeat;
    background-size: cover;
 }
-/* .img1{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    
- 
-  z-index: 1;
-} */
+
+
 .box2{
     border: 2px solid black;
     height: 250px;
@@ -152,9 +164,10 @@ input {
     background-image: url(a.jpg);
    background-repeat: no-repeat;
    background-size: cover;
-   
+   position: relative;
 
 }
+
 .box3{
     border: 2px solid black;
     height: 250px;
@@ -354,9 +367,10 @@ input {
     font-size: 18px;
     border-radius: 3px;
     padding: 5px 10px;
-    background-color: rgb(221, 95, 95);
+    background: rgb(229, 9, 20);
     color: white;
     border: none;
+    cursor: pointer;
 }
 .contact{
     margin-top: 30px;
